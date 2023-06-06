@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="logo">Ishar Ghura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea83e438a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+
+
+    <div id="home">
+        <div class="container">
+            <p class="name"><span>━</span> Ishar Ghura</p>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row2">
+                <div class="col1">
+                    <img src="images/flopic.jpg">
+                </div>
+                <div class="col2">
+                    <div class="header-text1">
+                        <p>Hi!</p>
+                    </div>
+                    <div class="header-text2">
+                        <p>I'm <span>Ishar</span>, a computer science student from Ottawa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/pic1.jpg" class="about-pic">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">about me</h1>
+                        <br>
+                        <p class="sub-title2"><span>Hey, I'm Ishar, a computer science student from Ottawa,
+                                Canada.</span></p>
+                        <br>
+                        <p>I enjoy using code to bring ideas out of my head and into the world.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('hobbs')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('accom')">Accomplishments</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="hobbs">
+                            <ul>
+                                <li>playing guitar and bass <a href="https://www.youtube.com/@meanredslider"
+                                        target="_blank">(check out my YouTube channel!)</a></li>
+                                <li>martial arts/kickboxing/taekwondo</li>
+                                <li>running, cycling, and cross-country skiing</li>
+                                <li>nature and photography</li>
+                                <li>travelling and exploring</li>
+                                <li>chess</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="accom">
+                            <ul>
+                                <li>2nd Dan Black Belt (about a decade's training)</li>
+                                <li>President of highschool Chess Club</li>
+                                <li>Microsoft Azure AI Fundamentals</li>
+                                <li>Tamarack Ottawa Race Weekend 10k</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work1.png">
+                        <div class="layer">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <h1>COMING SOON!</h1>
+                            <p>talk to an ai bot!</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.png">
+                        <div class="layer">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <p>sort out your schedule!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="sub-title">Contact</div>
+                <ul class="bot">
+                    <a href="#">Resume</a>
+                    <a href="https://ca.linkedin.com/in/ishar-ghura-71395a266" target="_blank">LinkedIn</a>
+                    <a href="mailto: ishar.ghuras@gmail.com" target="_blank">Email</a>
+                    <a href="https://www.instagram.com/ishar.g/" target="_blank">Instagram</a>
+                    <a href="https://github.com/isharghura" target="_blank">GitHub</a>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Ishar Ghura © 2023</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.opacity = 1;
+                mybutton.style.pointerEvents = "auto";
+            } else {
+                mybutton.style.opacity = 0;
+                mybutton.style.pointerEvents = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
+
+</html>

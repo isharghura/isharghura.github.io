@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    color: #080808;
+    overflow-x: hidden !important;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+}
+
+#myBtn{
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 1000px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: opacity 0.5s ease;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+.container{
+    padding:40px 5%;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+nav{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 5px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.name{
+    margin-right:70%;
+    font-size: 28px;
+    right: 10px;
+}
+
+.name span{
+    color: #e60808;
+}
+
+.header-text1{
+    font-size: 100px;
+}
+
+.header-text2{
+    font-size: 60px;
+}
+
+.header-text2 span{
+    color: #e60808;
+}
+
+#about{
+    padding: 240px 0;
+}
+
+.col1 img{
+    width:90%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0;
+}
+
+.col2{
+    flex-basis: 275%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-pic{
+    width: 85%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.about-col-2{
+    flex-basis: 200%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.sub-title2 span{
+    font-size: 25px;
+    font-weight: 200;
+    color: #e60808;
+}   
+
+.tab-titles{
+    display: flex;
+    margin: 10px 0 20px;
+}
+
+.tab-links{
+    margin-right: 5%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e60808;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li{
+    list-style: inside;
+    margin: 10px 0;
+}
+
+.tab-contents{
+    display: none;  
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+a:link{
+    color: #e60808;
+    opacity: 35%;
+}
+
+a:hover{
+    opacity:100%;
+    color: #e60808;
+}
+
+#projects{
+    padding: 40px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.3fr));
+    grid-gap: 200px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+}
+
+.work img{
+    width: 270%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: -40%;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 80%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.001), #e60808);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer p{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-size: 14px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #e60808;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.layer h1{
+    color: white;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #eb5757;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#contact{
+    margin-top: 200px;
+}
+
+nav .fas{
+    display: none;
+}
+
+.bot a{
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+
+@media only screen and (max-width: 667px){
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .header-text1{
+        margin-top: 20%;
+        margin-left: 50%;
+    }
+    .header-text2{
+        margin-top: 0%;
+        margin-left: 50%;
+    }
+    .row{
+        display: block;
+    }
+    .about-pic{
+        width: 100%;
+        height: auto;
+    }
+    .about-col-2{
+        font-size: 90%;
+    }
+    .sub-title{
+        font-size: 240%;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .name{
+        font-size: 200%;
+    }
+    nav ul{
+        background: #ec4e4e;
+        position: fixed; 
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        margin: 25px;
+        display: block;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .container{
+        padding: 100px;
+    }
+    .row2{
+        display: block;
+    }
+
+    .col1 img{
+        width: 120%;
+    }
+
+    .col2 .header-text1, .header-text2{
+        font-size: 200%;
+        width: 1100%;
+    }
+
+    .col2{
+        margin-right: 89%;
+    }
+    
+    .layer{
+        width: 110%;
+    }
+    .work img{
+        width: 350%;
+    }
+    .container a{
+        color: black;
+    }
+}
