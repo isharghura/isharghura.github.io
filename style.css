@@ -90,7 +90,7 @@ nav ul li a{
 }
 
 #about{
-    padding: 240px 0;
+    padding:100px 0;
 }
 
 .col1 img{
@@ -102,7 +102,7 @@ nav ul li a{
 .row2{
     display: flex;
     justify-content: space-between;
-    padding: 200px 0;
+    padding: 70px 0;
 }
 
 .col2{
