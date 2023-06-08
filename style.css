@@ -35,6 +35,8 @@ html{
   border-radius: 1000px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   transition: opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #myBtn:hover {
@@ -42,35 +44,41 @@ html{
   }
 
 .container{
-    padding:40px 5%;
+    padding:10% 5%;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
 
 nav{
-    display: block;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: right;
+    display: flex;
 }
 
 nav ul li{
-    display: inline-block;
     list-style: none;
-    margin: 10px 5px;
+    display: inline-block;
 }
 
 nav ul li a{
     color: #000;
     text-decoration: none;
     font-size: 18px;
+    margin: 0 10px;
 }
 
 .name{
-    margin-right:70%;
     font-size: 28px;
-    right: 10px;
+    left: 10;
+}
+
+.name a{
+    text-decoration: none;
+    color: black;
+}
+
+.name a:link{
+    opacity: 100%;
 }
 
 .name span{
@@ -89,6 +97,18 @@ nav ul li a{
     color: #e60808;
 }
 
+/* Style the header */
+.header {
+    top: 0;
+    padding: 1%;
+    background: #ffffff;
+    color: #000000;
+    position: fixed;
+    width: 95%;
+    height: 7%;
+    z-index: 5;
+}
+
 #about{
     padding:200px 0;
 }
@@ -103,25 +123,31 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     padding: 70px 0;
+    align-items: center;
 }
 
 .col2{
     flex-basis: 275%;
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
+.about-pic{
+    width: 35%;
+    height: 10%;
+    border-radius: 50px;
+    flex-direction: row;
 }
 
-.about-pic{
-    width: 85%;
-    height: auto;
-    border-radius: 50px;
+.about-col-1{
+    display: flex;
+    flex-direction: row;
 }
 
 .about-col-2{
-    flex-basis: 200%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 5%;
+    flex-direction: column;
+    align-self: center;
 }
 
 .sub-title{
@@ -137,7 +163,7 @@ nav ul li a{
 
 .tab-titles{
     display: flex;
-    margin: 10px 0 20px;
+    padding: 15px;
 }
 
 .tab-links{
@@ -165,7 +191,7 @@ nav ul li a{
 
 .tab-contents ul li{
     list-style: inside;
-    margin: 10px 0;
+    margin: 20px 5px;
 }
 
 .tab-contents ul li span{
@@ -191,7 +217,7 @@ a:hover{
 }
 
 #projects{
-    padding: 40px 0;
+    padding: 70px 0;
 }
 
 .work-list{
@@ -209,7 +235,7 @@ a:hover{
 .work img{
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
     transition: transform 0.5s;
 }
 
@@ -267,13 +293,8 @@ a:hover{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #eb5757;
+    background: #f8b6b6;
     font-weight: 300;
-    margin-top: 20px;
-}
-
-#contact{
-    margin-top: 200px;
 }
 
 nav .fas{
@@ -293,20 +314,23 @@ nav .fas{
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
-    .header-text1{
-        margin-top: 20%;
-        margin-left: 50%;
-    }
-    .header-text2{
-        margin-top: 0%;
-        margin-left: 50%;
-    }
-    .row{
-        display: block;
+    .col2{
+        font-size: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 10%;
+        height: 150%;
+        justify-content: center;
     }
     .about-pic{
         width: 100%;
         height: auto;
+    }
+    .about-col-1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .about-col-2{
         font-size: 90%;
@@ -315,15 +339,17 @@ nav .fas{
         font-size: 240%;
     }
     nav .fas{
-        display: block;
+        display: inline-block;
         font-size: 25px;
         cursor: pointer;
+        right: 0;
+        position: fixed;
     }
     .name{
         font-size: 200%;
     }
     nav ul{
-        background: #ec4e4e;
+        background: #ff8181;
         position: fixed; 
         top: 0;
         right: -200px;
@@ -349,9 +375,10 @@ nav .fas{
         padding: 100px;
     }
     .row2{
-        display: block;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
     }
-
     .col1 img{
         width: 120%;
     }
