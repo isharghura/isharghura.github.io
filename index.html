@@ -8,26 +8,28 @@
     <title class="logo">Ishar Ghura</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ea83e438a8.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 </head>
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
-
-
     <div id="home">
         <div class="container">
-            <p class="name"><span>━</span> Ishar Ghura</p>
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
+            <div class="header">
+                <nav>
+                    <p class="name">
+                        <a href="#home"><span>━</span> Ishar Ghura</a>
+                    </p>
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
             <div class="row2">
                 <div class="col1">
                     <img src="images/flopic.jpg">
@@ -47,39 +49,39 @@
             <div id="about">
                 <div class="row">
                     <div class="about-col-1">
+                        <div class="about-col-2">
+                            <h1 class="sub-title">about me</h1>
+                            <br>
+                            <p class="sub-title2"><span>Hey, I'm Ishar, a Computer Science student from Ottawa,
+                                    Canada.</span></p>
+                            <br>
+                            <p>I enjoy using code to bring ideas out of my head and into the world.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('accom')">Accomplishments</p>
+                                <p class="tab-links" onclick="opentab('hobbs')">Hobbies</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="accom">
+                                <ul>
+                                    <li>2nd Dan Black Belt <span>(training from 2013-present)</span></li>
+                                    <li>President of highschool Chess Club <span>(2021-22)</span></li>
+                                    <li>Microsoft Azure AI Fundamentals Certificate <span>(2021)</span></li>
+                                    <li>Tamarack Ottawa Race Weekend 10k <span>(2023)</span></li>
+                                    <li>A+ Grades in courses <span>(2022-present)</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="hobbs">
+                                <ul>
+                                    <li>playing guitar and bass <a href="https://www.youtube.com/@meanredslider"
+                                            target="_blank">(check out my YouTube channel!)</a></li>
+                                    <li>martial arts/kickboxing/taekwondo</li>
+                                    <li>running, cycling, and cross-country skiing</li>
+                                    <li>nature and photography</li>
+                                    <li>travelling and exploring</li>
+                                    <li>chess</li>
+                                </ul>
+                            </div>
+                        </div>
                         <img src="images/pic1.jpg" class="about-pic">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">about me</h1>
-                        <br>
-                        <p class="sub-title2"><span>Hey, I'm Ishar, a Computer Science student from Ottawa,
-                                Canada.</span></p>
-                        <br>
-                        <p>I enjoy using code to bring ideas out of my head and into the world.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('accom')">Accomplishments</p>
-                            <p class="tab-links" onclick="opentab('hobbs')">Hobbies</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="accom">
-                            <ul>
-                                <li>2nd Dan Black Belt <span>(training from 2013-present)</span></li>
-                                <li>President of highschool Chess Club <span>(2021-22)</span></li>
-                                <li>Microsoft Azure AI Fundamentals Certificate <span>(2021)</span></li>
-                                <li>Tamarack Ottawa Race Weekend 10k <span>(2023)</span></li>
-                                <li>A+ Grades in courses <span>(2022-present)</span></li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="hobbs">
-                            <ul>
-                                <li>playing guitar and bass <a href="https://www.youtube.com/@meanredslider"
-                                        target="_blank">(check out my YouTube channel!)</a></li>
-                                <li>martial arts/kickboxing/taekwondo</li>
-                                <li>running, cycling, and cross-country skiing</li>
-                                <li>nature and photography</li>
-                                <li>travelling and exploring</li>
-                                <li>chess</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -120,7 +122,7 @@
             <div class="container">
                 <div class="sub-title">Contact</div>
                 <ul class="bot">
-                    <a href="#">Resume</a>
+                    <a href="images/igrsm.pdf" target="_blank">Resume</a>
                     <a href="https://ca.linkedin.com/in/ishar-ghura" target="_blank">LinkedIn</a>
                     <a href="mailto: ishar.ghuras@gmail.com" target="_blank">Email</a>
                     <a href="https://www.instagram.com/ishar.g/" target="_blank">Instagram</a>
@@ -170,8 +172,8 @@
         // Get the button:
         let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        // When the user scrolls down 20px from the top of the document, show the button and header
+        window.onscroll = function () { scrollFunction(), myFunction() };
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -189,7 +191,6 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
-
 </body>
 
 </html>
