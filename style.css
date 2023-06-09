@@ -232,7 +232,7 @@ a:hover{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 0.3fr));
+    grid-template-columns: repeat(auto-fit, minmax(22%, 0.3fr));
     grid-gap: 200px;
     margin-top: 50px;
 }
@@ -243,16 +243,18 @@ a:hover{
 }
 
 .work img{
-    width: 70%;
+    width: 300px;
     height: auto;
     display: flex;
     transition: transform 0.5s;
+    background-image: url("images/phoneborder.png");
+    background-size: 100%;
 }
 
 .layer{
     border-radius: 11.5%;
-    width: 65%;
-    margin-left: 2.5%;
+    width: 278px;
+    margin-left: 10px;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.001), #e60808);
     position: absolute;
@@ -322,6 +324,7 @@ nav .fas{
         overflow-x: hidden !important;
     }
     .container {
+        padding: 60px;
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
@@ -386,10 +389,7 @@ nav .fas{
         left: 0px;
         cursor: pointer;
     }
-    
-    .container{
-        padding: 100px;
-    }
+
     .row2{
         flex-direction: column;
         display: flex;
@@ -409,5 +409,12 @@ nav .fas{
     }
     .container a{
         color: black;
+    }
+    .work img{
+        width: 130%;
+    }
+    .layer{
+        width: 119%;
+        margin-left:11px;
     }
 }
