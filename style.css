@@ -113,9 +113,10 @@ nav ul li a{
     background: #ffffff;
     color: #000000;
     position: fixed;
-    width: 95%;
+    width: 100%;
     height: 7%;
     z-index: 5;
+    left:0;
 }
 
 #about{
@@ -242,26 +243,27 @@ a:hover{
 }
 
 .work img{
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
     transition: transform 0.5s;
 }
 
 .layer{
-    width: 100%;
+    border-radius: 11.5%;
+    width: 65%;
+    margin-left: 2.5%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.001), #e60808);
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-bottom: 10%;
+    margin-bottom: 3.5%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 100px;
     text-align: center;
     transition: height 0.5s;
 }
@@ -323,6 +325,13 @@ nav .fas{
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+    .header{
+        width: 100%;
+        right: 0;
+    }
+    .name a{
+        font-size: 90%;
+    }
     .col2{
         font-size: 90%;
         display: flex;
@@ -348,14 +357,11 @@ nav .fas{
         font-size: 240%;
     }
     nav .fas{
-        display: inline-block;
         font-size: 25px;
+        display: flex;
         cursor: pointer;
-        right: 0;
+        margin-left: 80%;
         position: fixed;
-    }
-    .name{
-        font-size: 200%;
     }
     nav ul{
         background: #ff8181;
@@ -377,9 +383,10 @@ nav .fas{
     nav ul .fas{
         position: absolute;
         top: 25px;
-        left: 25px;
+        left: 0px;
         cursor: pointer;
     }
+    
     .container{
         padding: 100px;
     }
