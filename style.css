@@ -420,7 +420,9 @@ nav .fas{
         margin-top: 50px;
     }
     .layer{
-        width: 119%;
-        margin-left:11px;
+        width: 227px;
+        margin-bottom: 12px;
+        margin-left: 11%;
+        border-radius: 8%;
     }
 }
