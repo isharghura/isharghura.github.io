@@ -242,7 +242,7 @@ a:hover{
     position: relative;
 }
 
-.work img{
+.work img:not(:last-child){
     width: 300px;
     height: auto;
     display: flex;
@@ -277,7 +277,7 @@ a:hover{
     font-size: 14px;
 }
 
-.layer a{
+.work .layer a:first-child{
     margin-top: 20px;
     color: #e60808;
     text-decoration: none;
@@ -300,6 +300,11 @@ a:hover{
 
 .layer h1{
     color: white;
+}
+
+.layer a img:last-child{
+    width: 20%;
+    height: auto;
 }
 
 .copyright{
