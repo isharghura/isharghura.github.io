@@ -165,6 +165,13 @@ nav ul li a{
     font-weight: 600;
 }
 
+.sub-title-alt{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left:5%;
+    padding: 70px;
+}
+
 .sub-title2 span{
     font-size: 25px;
     font-weight: 200;
@@ -235,11 +242,15 @@ a:hover{
     grid-template-columns: repeat(auto-fit, minmax(22%, 0.3fr));
     grid-gap: 190px;
     margin-top: 50px;
+    margin-left: 10%;
 }
 
 .work{
     border-radius: 10px;
     position: relative;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
 .work img:not(:last-child){
@@ -258,7 +269,6 @@ a:hover{
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.001), #e60808);
     position: absolute;
-    left: 0;
     bottom: 0;
     margin-bottom: 3.5%;
     overflow: hidden;
@@ -324,7 +334,7 @@ nav .fas{
     margin: 5px;
 }
 
-@media only screen and (max-width: 667px){
+@media only screen and (max-width: 763px){
     body {
         overflow-x: hidden !important;
     }
@@ -363,6 +373,12 @@ nav .fas{
     }
     .sub-title{
         font-size: 240%;
+    }
+    .sub-title-alt{
+        font-size: 60px;
+        font-weight: 600;
+        padding: 70px;
+        margin-left: -10%;
     }
     nav .fas{
         font-size: 25px;
@@ -420,14 +436,14 @@ nav .fas{
     }
     .work-list{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(35%, 0.3fr));
+        margin-left:0%;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 0.3fr));
         grid-gap: 180px;
         margin-top: 50px;
     }
     .layer{
-        width: 227px;
+        width: 280px;
         margin-bottom: 12px;
-        margin-left: 11%;
         border-radius: 8%;
     }
 }
