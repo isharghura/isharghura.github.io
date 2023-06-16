@@ -124,7 +124,7 @@ nav ul li a{
 }
 
 .col1 img{
-    width:80%;
+    width:190%;
     height: auto;
     border-radius: 50px;
 }
@@ -132,12 +132,13 @@ nav ul li a{
 .row2{
     display: flex;
     justify-content: space-between;
-    padding: 70px 0;
+    padding: 70px 100px;
     align-items: center;
 }
 
 .col2{
     flex-basis: 275%;
+    margin-left: 20%;
 }
 
 .about-pic{
