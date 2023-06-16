@@ -99,7 +99,7 @@ nav ul li a{
 }
 
 .header-text2{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .header-text2 span{
@@ -124,21 +124,25 @@ nav ul li a{
 }
 
 .col1 img{
-    width:190%;
+    float: left;
+    width:100%;
     height: auto;
     border-radius: 50px;
 }
 
 .row2{
     display: flex;
-    justify-content: space-between;
-    padding: 70px 100px;
+    justify-content:space-between;
+    padding: 70px;
     align-items: center;
+    width: 80%;
+    height: auto;
+    margin-left: 1.5em;
 }
 
 .col2{
     flex-basis: 275%;
-    margin-left: 20%;
+    margin-right: -30%;
 }
 
 .about-pic{
@@ -349,16 +353,15 @@ nav .fas{
         right: 0;
     }
     .name a{
-        font-size: 90%;
+        font-size: 100%;
     }
     .col2{
-        font-size: 90%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 10%;
-        height: 150%;
-        justify-content: center;
+        width: 300px;
+    }
+    .col2 p{
+        font-size: 70%;
     }
     .about-pic{
         width: 100%;
@@ -418,17 +421,10 @@ nav .fas{
         align-items: center;
     }
     .col1 img{
-        width: 110%;
+        width: 300px;
+        height: auto;
     }
 
-    .col2 .header-text1, .header-text2{
-        font-size: 200%;
-        width: 1100%;
-    }
-
-    .col2{
-        margin-right: 89%;
-    }
     .container a{
         color: black;
     }
