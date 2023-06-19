@@ -1,3 +1,5 @@
+//sidemenu stuff
+
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -21,6 +23,8 @@ function openmenu() {
 function closemenu() {
     sidemenu.style.right = "-200px";
 }
+
+//header, footer, and scroll-up button
 
 let mybutton = document.getElementById("myBtn");
 let footer = document.getElementById('down');

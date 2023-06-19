@@ -67,7 +67,7 @@ html {
 }
 
 .container {
-    padding: 10% 5%;
+    padding: 12% 5%;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
@@ -361,7 +361,7 @@ nav .fas {
 
 #down{
     position: fixed;
-    bottom: 20px;
+    bottom: 0px;
     left: 30px;
     z-index: 99;
     cursor: pointer;
@@ -370,10 +370,6 @@ nav .fas {
     transition: opacity 0.5s ease;
     opacity: 1;
     pointer-events: auto;
-}
-
-#contact{
-    margin-left: 50px;
 }
 
 .container form{
@@ -408,7 +404,7 @@ nav .fas {
     }
 
     .container {
-        padding: 60px;
+        padding: 80px;
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
@@ -425,7 +421,11 @@ nav .fas {
     .col2 {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 350px;
+    }
+
+    .col2 .header-text1{
+        font-size: 350%;
     }
 
     .col2 p {
@@ -533,7 +533,7 @@ nav .fas {
         padding: 1.4rem;
         background:transparent;
         border: 1px solid black;
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .container form textarea{
