@@ -404,7 +404,7 @@ nav .fas {
 }
 
 .container form input, textarea, button{
-    padding: 1.4rem 0rem;
+    padding: 1.4rem 1rem;
     background:transparent;
     border: 1px solid black;
     font-size: 20px;
