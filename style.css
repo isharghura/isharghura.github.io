@@ -410,7 +410,7 @@ nav .fas {
     }
 
     .container {
-        padding: 80px auto auto;
+        padding: 80px 0px;
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
