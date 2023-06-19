@@ -535,7 +535,6 @@ nav .fas {
 
     .work-list {
         display: grid;
-        margin-left: 0%;
         grid-template-columns: repeat(auto-fit, minmax(50%, 0.3fr));
         grid-gap: 180px;
         margin-top: 50px;
@@ -551,10 +550,11 @@ nav .fas {
         display:flex;
         flex-direction: column;
         width: 100%;
+        padding: 0px 20px;
     }
     
     .container form input, textarea, button{
-        padding: 1.4rem;
+        padding: 1.4rem 20px;
         background:transparent;
         border: 1px solid black;
         font-size: 15px;
