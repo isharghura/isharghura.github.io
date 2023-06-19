@@ -1,4 +1,4 @@
-//sidemenu stuff
+//tab links stuff
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -13,6 +13,8 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+//sidemenu bar
 
 var sidemenu = document.getElementById("sidemenu");
 
