@@ -402,6 +402,7 @@ nav .fas {
 }
 
 @media only screen and (max-width: 763px) {
+    
     body {
         overflow-x: hidden !important;
     }
@@ -520,5 +521,30 @@ nav .fas {
         width: 280px;
         margin-bottom: 12px;
         border-radius: 8%;
+    }
+
+    .container form{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .container form input, textarea, button{
+        padding: 1.4rem;
+        background:transparent;
+        border: 1px solid black;
+        font-size: 20px;
+    }
+    
+    .container form textarea{
+        height: 200px;
+    }
+    
+    .container form button{
+        width: 100%;
+        padding: 1rem;
+        cursor: pointer;
+        background:rgb(236, 54, 54);
+        color: white;
     }
 }
