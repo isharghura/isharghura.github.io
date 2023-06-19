@@ -28,26 +28,33 @@ function closemenu() {
 
 let mybutton = document.getElementById("myBtn");
 let footer = document.getElementById('down');
-let moveUp = document.getElementById('up');
+let iconstop = document.getElementById('topper');
 
-window.onscroll = function () { scrollFunction(), myFunction() };
+window.onscroll = function () { scrollFunction(), myFunction(), iconFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.opacity = 1;
         mybutton.style.pointerEvents = "auto";
+        iconstop.style.opacity = 1;
+        iconstop.style.pointerEvents = "auto";
     } else {
         mybutton.style.opacity = 0;
         mybutton.style.pointerEvents = "none";
+        iconstop.style.opacity = 0;
+        iconstop.style.pointerEvents = "none";
     }
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         footer.style.opacity = 0;
         footer.style.pointerEvents = 'none';
-    }
-    else {
+    } else {
         footer.style.opacity = 1;
         footer.style.pointerEvents = "auto";
     }
+}
+
+function iconFunction() {
+
 }
 
 function topFunction() {
