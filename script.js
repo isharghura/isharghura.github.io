@@ -23,6 +23,8 @@ function closemenu() {
 }
 
 let mybutton = document.getElementById("myBtn");
+let footer = document.getElementById('down');
+let moveUp = document.getElementById('up');
 
 window.onscroll = function () { scrollFunction(), myFunction() };
 
@@ -33,6 +35,14 @@ function scrollFunction() {
     } else {
         mybutton.style.opacity = 0;
         mybutton.style.pointerEvents = "none";
+    }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        footer.style.opacity = 0;
+        footer.style.pointerEvents = 'none';
+    }
+    else {
+        footer.style.opacity = 1;
+        footer.style.pointerEvents = "auto";
     }
 }
 
