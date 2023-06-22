@@ -272,7 +272,7 @@ a:hover {
     align-content: center;
 }
 
-.work img:not(:last-child) {
+.work img:not(:last-child){
     width: 300px;
     height: auto;
     display: flex;
@@ -286,7 +286,7 @@ a:hover {
     width: 278px;
     margin-left: 10px;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.001), #e60808);
+    background: linear-gradient(rgba(0, 0, 0, 0.001), #ff0000);
     position: absolute;
     bottom: 0;
     margin-bottom: 3.5%;
@@ -300,10 +300,17 @@ a:hover {
 }
 
 .layer p {
-    font-weight: 500;
+    font-weight: 1000;
     margin-bottom: 20px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
+}
+
+.layer h1, .layer p{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid rgba(75, 2, 2, 0);
+    background-color: #00000063;
 }
 
 .work .layer a:first-child {
@@ -360,7 +367,7 @@ nav .fas {
     font-size: 30px;
 }
 
-#down{
+#down {
     position: fixed;
     bottom: 0px;
     left: 30px;
@@ -373,7 +380,7 @@ nav .fas {
     pointer-events: auto;
 }
 
-#topper{
+#topper {
     position: fixed;
     top: 0px;
     left: 190px;
@@ -386,7 +393,7 @@ nav .fas {
     pointer-events: none;
 }
 
-#inthemenu{
+#inthemenu {
     display: none;
 }
 
@@ -396,33 +403,35 @@ nav .fas {
     text-align: center;
 }
 
-.container form{
-    display:flex;
+.container form {
+    display: flex;
     flex-direction: column;
     width: 50%;
     margin: auto;
 }
 
-.container form input, textarea, button{
+.container form input,
+textarea,
+button {
     padding: 1.4rem 1rem;
-    background:transparent;
+    background: transparent;
     border: 1px solid black;
     font-size: 20px;
 }
 
-.container form textarea{
+.container form textarea {
     height: 200px;
 }
 
-.container form button{
+.container form button {
     padding: 1rem;
     cursor: pointer;
-    background:rgb(236, 54, 54);
+    background: rgb(236, 54, 54);
     color: white;
 }
 
 @media only screen and (max-width: 763px) {
-    
+
     body {
         overflow-x: hidden !important;
     }
@@ -448,7 +457,7 @@ nav .fas {
         width: 350px;
     }
 
-    .col2 .header-text1{
+    .col2 .header-text1 {
         font-size: 350%;
     }
 
@@ -546,33 +555,36 @@ nav .fas {
         border-radius: 8%;
     }
 
-    .container form{
-        display:flex;
+    .container form {
+        display: flex;
         flex-direction: column;
         width: 100%;
         padding: 0px 20px;
     }
-    
-    .container form input, textarea, button{
+
+    .container form input,
+    textarea,
+    button {
         padding: 1.4rem 20px;
-        background:transparent;
+        background: transparent;
         border: 1px solid black;
         font-size: 15px;
     }
-    
-    .container form textarea{
+
+    .container form textarea {
         height: 200px;
     }
-    
-    .container form button{
+
+    .container form button {
         width: 100%;
         padding: 1rem;
         cursor: pointer;
-        background:rgb(236, 54, 54);
+        background: rgb(236, 54, 54);
         color: white;
     }
-    #inthemenu{
-        display:flex;
+
+    #inthemenu {
+        display: flex;
         flex-direction: column;
         position: fixed;
         z-index: 100;
@@ -583,7 +595,8 @@ nav .fas {
         opacity: 1;
         pointer-events: auto;
     }
-    #inthemenu a i{
+
+    #inthemenu a i {
         padding: 12px;
     }
 }
