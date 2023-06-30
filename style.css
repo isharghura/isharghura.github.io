@@ -147,7 +147,7 @@ nav ul li a {
 .row2 {
     display: flex;
     justify-content: space-between;
-    padding: 70px;
+    padding: 0px;
     align-items: center;
     width: 80%;
     height: auto;
@@ -458,11 +458,11 @@ button {
     }
 
     .col2 .header-text1 {
-        font-size: 350%;
+        font-size: 500%;
     }
 
     .col2 p {
-        font-size: 70%;
+        font-size: 60%;
     }
 
     .about-pic {
@@ -530,7 +530,7 @@ button {
     }
 
     .col1 img {
-        width: 300px;
+        width: 250px;
         height: auto;
     }
 
