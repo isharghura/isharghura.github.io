@@ -277,19 +277,20 @@ a:hover {
     height: auto;
     display: flex;
     transition: transform 0.5s;
-    background-image: url("images/phoneborder.png");
     background-size: 100%;
+    border-radius: 50.5px;
+    border: 10px solid black;
 }
 
 .layer {
-    border-radius: 11.5%;
-    width: 278px;
+    border-radius: 8.5%;
+    width: 280px;
     margin-left: 10px;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.001), #ff0000);
     position: absolute;
     bottom: 0;
-    margin-bottom: 3.5%;
+    margin-bottom: 3.2%;
     overflow: hidden;
     display: flex;
     align-items: center;
