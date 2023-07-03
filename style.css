@@ -272,7 +272,7 @@ a:hover {
     align-content: center;
 }
 
-.work img:not(:last-child){
+.work img:not(:last-child) {
     width: 300px;
     height: auto;
     display: flex;
@@ -307,7 +307,8 @@ a:hover {
     font-size: 20px;
 }
 
-.layer h1, .layer p{
+.layer h1,
+.layer p {
     padding: 5px;
     border-radius: 20px;
     border: 1px solid rgba(75, 2, 2, 0);
