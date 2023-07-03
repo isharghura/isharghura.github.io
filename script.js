@@ -59,3 +59,31 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+let darkmodebtn = document.getElementById("dm-btn");
+let header = document.getElementById("headertop")
+let headerText = document.querySelectorAll("nav ul li a");
+let icons = document.getElementsByClassName("bot");
+
+function darkmode() {
+    var body = document.body;
+    var currentColor = body.style.backgroundColor;
+
+    if (currentColor === "white") {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        header.style.background = 'black';
+        headerText.forEach(function(element) {
+            element.style.color = 'white';
+        });
+        icons.style.color='white';
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+        header.style.background = 'white';
+        headerText.forEach(function(element) {
+            element.style.color = 'black';
+        });
+        icons.style.color='black';
+    }
+}
