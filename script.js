@@ -90,8 +90,10 @@ function darkmode() {
             element.style.border = '1px solid white'
         })
         darkmodebtn.style.border = 'transparent';
-        mybutton.style.border='transparent';
-        mybutton.style.color='white';
+        mybutton.style.border = 'transparent';
+        mybutton.style.color = 'white';
+
+        localStorage.setItem('darkModeEnabled', 'true');
     } else {
         body.style.backgroundColor = "white";
         body.style.color = "black";
@@ -110,7 +112,17 @@ function darkmode() {
             element.style.border = '1px solid black'
         })
         darkmodebtn.style.border = 'transparent';
-        mybutton.style.border='transparent';
-        mybutton.style.color='white';
+        mybutton.style.border = 'transparent';
+        mybutton.style.color = 'white';
+        localStorage.setItem('darkModeEnabled', 'false');
     }
 }
+
+function isDarkMode() {
+    var darkModePreference = localStorage.getItem('darkModeEnabled');
+    if (darkModePreference) {
+        darkmode();
+    }
+}
+
+isDarkMode()
