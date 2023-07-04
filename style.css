@@ -10,6 +10,7 @@ body {
     color: #080808;
     overflow-x: hidden !important;
     animation: fadeIn 1s;
+    transition: all 0.6s ease;
 }
 
 @keyframes fadeIn {
@@ -56,6 +57,7 @@ html {
     border: transparent;
     z-index: 99;
     opacity: 0.5;
+    transition: all 0.6s ease;
 }
 
 #dm-btn:hover{
@@ -82,29 +84,38 @@ nav {
 nav ul li {
     list-style: none;
     display: inline-block;
-    color: black;
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 18px;
     margin: 0 6px;
+    opacity: 50%;
+    font-weight: 1000;
+}
+
+nav ul li a:hover{
+    opacity:100%
 }
 
 .name {
     position: fixed;
     font-size: 28px;
-    /* left: 10; */
 }
 
 .name a {
     text-decoration: none;
     color: black;
+    transition: all 0.6s ease;
 }
 
 .name a:link {
     opacity: 100%;
+}
+
+.name a:hover{
+    color:red;
 }
 
 .name span {
@@ -133,6 +144,7 @@ nav ul li a {
     height: 7%;
     z-index: 5;
     left: 0;
+    transition: all 0.6s ease;
 }
 
 #about {
@@ -211,6 +223,7 @@ nav ul li a {
     cursor: pointer;
     position: relative;
     color:black;
+    transition: all 0.6s ease;
 }
 
 .tab-links::after {
@@ -247,10 +260,10 @@ nav ul li a {
 
 a:link {
     color: #000000;
-    opacity: 35%;
+    opacity: 60%;
 }
 
-a:hover {
+a:link:hover {
     opacity: 100%;
     color: #e60808;
 }
@@ -280,9 +293,9 @@ a:hover {
     height: auto;
     display: flex;
     transition: transform 0.5s;
-    background-size: 100%;
-    border-radius: 50.5px;
+    border-radius: 40px;
     border: 10px solid black;
+    transition: all 0.6s ease;
 }
 
 .layer {
@@ -353,19 +366,22 @@ a:hover {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #f8b6b6;
+    background: #df4f4f;
     color: black;
     font-weight: 300;
 }
 
 nav .fas {
     display: none;
+    color:black;
+    transition: all 0.6s ease;
 }
 
 .bot a {
     border:none;
     text-decoration: none;
     margin: 5px 5px;
+    color: red;
 }
 
 .bot {
@@ -428,6 +444,7 @@ button {
     background: transparent;
     border: 1px solid black;
     font-size: 20px;
+    color: black;
 }
 
 .container form textarea {
@@ -511,7 +528,7 @@ button {
     }
 
     nav ul {
-        background: #ff8181;
+        background: #da0e0e;
         position: fixed;
         top: 0;
         right: -200px;
@@ -532,6 +549,10 @@ button {
         top: 25px;
         left: 0px;
         cursor: pointer;
+    }
+
+    a:link:hover {
+        color: black;
     }
 
     .row2 {

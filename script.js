@@ -62,8 +62,11 @@ function topFunction() {
 
 let darkmodebtn = document.getElementById("dm-btn");
 let header = document.getElementById("headertop")
-let headerText = document.querySelectorAll("nav ul li a");
-let icons = document.getElementsByClassName("bot");
+let nameText = document.querySelector('#headertop nav .name a');
+let tabLinks = document.querySelectorAll('.tab-links');
+let projImg = document.querySelectorAll('.work img:not(:last-child)')
+let menuButton = document.querySelector('.fas.fa-bars')
+let contactForm = document.querySelectorAll('.container form input, textarea, button');
 
 function darkmode() {
     var body = document.body;
@@ -73,17 +76,41 @@ function darkmode() {
         body.style.backgroundColor = "black";
         body.style.color = "white";
         header.style.background = 'black';
-        headerText.forEach(function(element) {
+        nameText.style.color = "white";
+        darkmodebtn.style.color = 'white';
+        tabLinks.forEach(function (link) {
+            link.style.color = 'white';
+        })
+        projImg.forEach(function (img) {
+            img.style.border = '10px solid #DCDCDC';
+        })
+        menuButton.style.color = 'white';
+        contactForm.forEach(function (element) {
             element.style.color = 'white';
-        });
-        icons.style.color='white';
+            element.style.border = '1px solid white'
+        })
+        darkmodebtn.style.border = 'transparent';
+        mybutton.style.border='transparent';
+        mybutton.style.color='white';
     } else {
         body.style.backgroundColor = "white";
         body.style.color = "black";
         header.style.background = 'white';
-        headerText.forEach(function(element) {
+        nameText.style.color = "black";
+        darkmodebtn.style.color = 'black';
+        tabLinks.forEach(function (link) {
+            link.style.color = 'black';
+        })
+        projImg.forEach(function (img) {
+            img.style.border = '10px solid black';
+        })
+        menuButton.style.color = 'black';
+        contactForm.forEach(function (element) {
             element.style.color = 'black';
-        });
-        icons.style.color='black';
+            element.style.border = '1px solid black'
+        })
+        darkmodebtn.style.border = 'transparent';
+        mybutton.style.border='transparent';
+        mybutton.style.color='white';
     }
 }
