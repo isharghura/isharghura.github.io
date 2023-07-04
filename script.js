@@ -70,9 +70,8 @@ let contactForm = document.querySelectorAll('.container form input, textarea, bu
 
 function darkmode() {
     var body = document.body;
-    var currentColor = body.style.backgroundColor;
 
-    if (currentColor === "white") {
+    if (darkmodebtn.style.color === "black") {
         body.style.backgroundColor = "black";
         body.style.color = "white";
         header.style.background = 'black';
@@ -117,12 +116,3 @@ function darkmode() {
         localStorage.setItem('darkModeEnabled', 'false');
     }
 }
-
-function isDarkMode() {
-    var darkModePreference = localStorage.getItem('darkModeEnabled');
-    if (darkModePreference) {
-        darkmode();
-    }
-}
-
-isDarkMode()
