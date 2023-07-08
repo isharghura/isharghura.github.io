@@ -222,7 +222,7 @@ nav ul li a:hover{
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color:black;
+    color:rgb(255, 11, 11);
     transition: all 0.6s ease;
 }
 
@@ -247,7 +247,7 @@ nav ul li a:hover{
 }
 
 .tab-contents ul li span {
-    color: rgb(167, 20, 20);
+    color: rgb(255, 0, 0);
 }
 
 .tab-contents {
@@ -260,7 +260,7 @@ nav ul li a:hover{
 
 a:link {
     color: #ff0101;
-    opacity: 60%;
+    opacity: 90%;
 }
 
 a:link:hover {
@@ -545,15 +545,15 @@ button {
         display: block;
     }
 
+    nav ul li a {
+        color: red;
+    }
+
     nav ul .fas {
         position: absolute;
         top: 25px;
         left: 0px;
         cursor: pointer;
-    }
-
-    a:link:hover {
-        color: black;
     }
 
     .row2 {
@@ -568,7 +568,7 @@ button {
     }
 
     .container a {
-        color: black;
+        color: rgb(255, 0, 0);
     }
 
     .work img {
