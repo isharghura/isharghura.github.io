@@ -60,7 +60,7 @@ html {
     transition: all 0.6s ease;
 }
 
-#dm-btn:hover{
+#dm-btn:hover {
     cursor: pointer;
     opacity: 1
 }
@@ -95,8 +95,8 @@ nav ul li a {
     font-weight: 1000;
 }
 
-nav ul li a:hover{
-    opacity:100%
+nav ul li a:hover {
+    opacity: 100%
 }
 
 .name {
@@ -114,8 +114,8 @@ nav ul li a:hover{
     opacity: 100%;
 }
 
-.name a:hover{
-    color:red;
+.name a:hover {
+    color: red;
 }
 
 .name span {
@@ -222,7 +222,7 @@ nav ul li a:hover{
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color:rgb(255, 11, 11);
+    color: rgb(255, 11, 11);
     transition: all 0.6s ease;
 }
 
@@ -373,12 +373,12 @@ a:link:hover {
 
 nav .fas {
     display: none;
-    color:black;
+    color: black;
     transition: all 0.6s ease;
 }
 
 .bot a {
-    border:none;
+    border: none;
     text-decoration: none;
     margin: 5px 5px;
     color: red;
@@ -417,7 +417,8 @@ nav .fas {
     font-size: 0px;
     transition: opacity 0.5s ease;
     opacity: 0;
-    pointer-events: none;;
+    pointer-events: none;
+    ;
 }
 
 #inthemenu {
