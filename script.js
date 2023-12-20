@@ -130,12 +130,12 @@ function disableDarkMode() {
     localStorage.setItem('darkModeEnabled', 'false');
 }
 
-window.addEventListener('load', function(){
-    var darkModePreference=this.localStorage.getItem('darkModeEnabled');
-    if(darkModePreference==='true'){
+window.addEventListener('load', function () {
+    var darkModePreference = this.localStorage.getItem('darkModeEnabled');
+    if (darkModePreference === 'true') {
         enableDarkMode();
     }
-    else{
+    else {
         disableDarkMode();
     }
 })
