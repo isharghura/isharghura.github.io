@@ -32,7 +32,7 @@ let mybutton = document.getElementById("myBtn");
 let footer = document.getElementById('down');
 let iconstop = document.getElementById('topper');
 
-window.onscroll = function () { scrollFunction(), myFunction(), iconFunction() };
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
