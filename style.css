@@ -539,15 +539,21 @@ button {
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
-    }
-
-    nav ul li {
-        margin: 25px;
-        display: block;
+        color: white;
     }
 
     nav ul li a {
-        color: red;
+        margin: 25px;
+        display: block;
+        color: white;
+    }
+
+    a:link {
+        color: white;
+    }
+
+    nav ul li a {
+        color: white;
     }
 
     nav ul .fas {
@@ -566,10 +572,6 @@ button {
     .col1 img {
         width: 250px;
         height: auto;
-    }
-
-    .container a {
-        color: rgb(255, 0, 0);
     }
 
     .work img {
@@ -632,5 +634,6 @@ button {
 
     #inthemenu a i {
         padding: 12px;
+        color: white;
     }
 }
