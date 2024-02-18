@@ -18,6 +18,10 @@ function opentab(tabname) {
 
 var sidemenu = document.getElementById("sidemenu");
 
+sidemenu.onclick = function () {
+    closemenu();
+}
+
 function openmenu() {
     sidemenu.style.right = "0";
 }
@@ -25,6 +29,7 @@ function openmenu() {
 function closemenu() {
     sidemenu.style.right = "-200px";
 }
+
 
 //header, footer, and scroll-up button
 
