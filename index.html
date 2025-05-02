@@ -6,232 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="logo">Ishar Ghura</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ea83e438a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 </head>
 
 <body>
 
-    <button onclick="darkmode()" id="dm-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
-    <div id="home">
-        <div class="container">
-            <div id="headertop">
-                <nav>
-                    <p class="name">
-                        <a href="#home"><span>━</span> Ishar Ghura</a>
-                    <div class="botter" id="topper">
-                        <ul class="bot">
-                            <a href="images/IsharGhuraResume.pdf" target="_blank" class=""><i
-                                    class="fa-regular fa-file-lines"></i></i></a>
-                            <a href="https://ca.linkedin.com/in/ishar-ghura" target="_blank"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/isharghura" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="mailto: ishar.ghuras@gmail.com" target="_blank"><i
-                                    class="fa-solid fa-envelope"></i></a>
-                            <a href="https://www.youtube.com/@isharghura" target="_blank"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/isharghura/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                        </ul>
-                    </div>
-                    </p>
-                    <ul id="sidemenu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <div id="inthemenu">
-                            <a href="images/IsharGhuraResume.pdf" target="_blank" class=""><i
-                                    class="fa-regular fa-file-lines"></i></i></a>
-                            <a href="https://ca.linkedin.com/in/ishar-ghura" target="_blank"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/isharghura" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="mailto: ishar.ghuras@gmail.com" target="_blank"><i
-                                    class="fa-solid fa-envelope"></i></a>
-                            <a href="https://www.youtube.com/@isharghura" target="_blank"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/isharghura/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
+    <header>
+        <h1>Ishar Ghura</h1>
+        <a href="https://github.com/isharghura" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/ishar-ghura" target="_blank">LinkedIn</a>
+    </header>
+
+    <h3 class="upto">What I've been up to</h3>
+
+    <section class="projects">
+        <a href="https://www.hackverify.com" class="projectlink" target="_blank">
+            <div class="project">
+                <img src="images/hackverify.jpg" alt="hackverify" class="projectImg">
+                <h3>HackVerify</h3>
+                <p>Helping hackathons automate cheat checks</p>
             </div>
-            <div class="row2">
-                <div class="col1">
-                    <img src="images/pfp.png">
-                </div>
-                <div class="col2">
-                    <span>
-                        <div class="header-text1">
-                            <p>Hi!</p>
-                        </div>
-                        <div class="header-text2">
-                            <p>I'm <span>Ishar</span>, a Computer Science student from Ottawa.</p>
-                        </div>
-                    </span>
-                </div>
+        </a>
+        <a href="https://github.com/isharghura/uOttaHack7" class="projectlink" target="_blank">
+            <div class="project">
+                <img src="images/roomba.jpg" alt="qnxroomba" class="projectImg">
+                <h3>QNX Roomba</h3>
+                <p>A roomba controlled by QNX that follows light</p>
             </div>
-        </div>
-
-        <div class="container">
-            <div id="about">
-                <div class="row">
-                    <div class="about-col-1">
-                        <div class="about-col-2">
-                            <h1 class="sub-title">about me</h1>
-                            <br>
-                            <p class="sub-title2"><span>Hey, I'm Ishar, a Computer Science student from Ottawa,
-                                    Canada.</span></p>
-                            <br>
-                            <p>I enjoy using code to bring ideas out of my head and into the world.</p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('accom')">Accomplishments</p>
-                                <p class="tab-links" onclick="opentab('hobbs')">Hobbies</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="accom">
-                                <ul>
-                                    <li>2nd Dan Black Belt <span>(training from 2013-present)</span></li>
-                                    <li>President of Highschool Chess Club <span>(2021-22)</span></li>
-                                    <li>Microsoft Azure AI Fundamentals Certificate <span>(2021)</span></li>
-                                    <li>Tamarack Ottawa Race Weekend 10k <span>(2023)</span></li>
-                                    <li>A+ Grades in courses <span>(2022-Present)</span></li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="hobbs">
-                                <ul>
-                                    <li>guitar and bass <a href="https://www.youtube.com/@isharghura"
-                                            target="_blank">(check out my YouTube channel!)</a></li>
-                                    <li>martial arts/kickboxing/taekwondo</li>
-                                    <li>running, cycling, and cross-country skiing</li>
-                                    <li>nature and photography</li>
-                                    <li>travelling and exploring</li>
-                                    <li>chess</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <img src="images/pic1.png" class="about-pic">
-                    </div>
-                </div>
+        </a>
+        <a href="https://github.com/isharghura/FoodBank-AI" class="projectlink" target="_blank">
+            <div class="project">
+                <img src="images/foodbank.jpeg" alt="foodbankai" class="projectImg">
+                <h3>FoodBank AI</h3>
+                <p>Food recognition for food bank donation</p>
             </div>
-        </div>
-
-        <div class="container">
-            <div id="projects">
-                <h1 class="sub-title-alt">Projects</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/work6.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://github.com/isharghura/MathMaster" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <h1>MathMaster</h1>
-                            <p>React Native app to practice arithmetic!</p>
-                            <a href="https://github.com/isharghura/MathMaster" target="_blank"><img src="images/github-mark.png"></a>
-                        </div>
-                        </div>
-                        <div class="work">
-                        <img src="images/work1.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://isharghura-aichatbot.onrender.com" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <h1>AI Chatbot</h1>
-                            <p>talk to an AI chatbot!</p>
-                            <a href="https://github.com/isharghura/aichatbot" target="_blank"><img
-                                    src="images/github-mark.png"></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work5.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://github.com/isharghura/CanvasConnect" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <h1>CanvasConnect</h1>
-                            <p>Upload artwork and discover new artists!</p>
-                            <a href="https://github.com/isharghura/CanvasConnect" target="_blank"><img src="images/github-mark.png"></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work4.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://github.com/isharghura/chessbot" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <h1>Discord Chess Bot</h1>
-                            <p>play chess in a Discord server!</p>
-                            <a href="https://github.com/isharghura/chessbot" target="_blank"><img src="images/github-mark.png"></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/foodtrackerpic.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://github.com/isharghura/food-tracker" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <h1>Food Tracker</h1>
-                            <p>search up food nutrition facts!</p>
-                            <a href="https://github.com/isharghura/food-tracker" target="_blank"><img
-                                    src="images/github-mark.png"></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work3.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://isharghura.com/mathquiz/" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <h1>Math Quiz</h1>
-                            <p>improve your math skills!</p>
-                            <a href="https://github.com/isharghura/mathquiz" target="_blank"><img
-                                    src="images/github-mark.png"></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work2.png" id="workimg">
-                        <div class="layer">
-                            <a href="https://isharghura.com/todolist/" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <h1>To-Do List</h1>
-                            <p>sort out your schedule!</p>
-                            <a href="https://github.com/isharghura/todolist" target="_blank"><img
-                                    src="images/github-mark.png"></a>
-                        </div>
-                    </div>
-                </div>
+        </a>
+        <a href="https://github.com/isharghura/aichatbot" class="projectlink" target="_blank">
+            <div class="project">
+                <img src="images/aichatbot.png" alt="aichatbot" class="projectImg">
+                <h3>AI Chatbot</h3>
+                <p>An intelligent AI Chatbot to help you out with everyday tasks</p>
             </div>
-        </div>
-
-        <div id="contact">
-            <div class="container">
-                <div class="sub-title-contact">Contact</div>
-                <form action="https://formspree.io/f/xgebgrdy" method="POST">
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <textarea name="Message" placeholder="Type your message here..." required></textarea>
-                    <button type="submit">Send</button>
-                </form>
+        </a>
+        <a href="https://github.com/isharghura/chessbot" class="projectlink" target="_blank">
+            <div class="project">
+                <img src="images/chessbot.png" alt="chessbot" class="projectImg">
+                <h3>Discord chessbot</h3>
+                <p>A Discord bot that plays chess against users in a server</p>
             </div>
-        </div>
-
-        <div class="botter" id="down">
-            <ul class="bot">
-                <a href="images/IsharGhuraResume.pdf" target="_blank" class=""><i class="fa-regular fa-file-lines"></i></i></a>
-                <a href="https://ca.linkedin.com/in/ishar-ghura" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/isharghura" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto: ishar.ghuras@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.youtube.com/@isharghura" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/isharghura/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-            </ul>
-        </div>
-
-        <div class="copyright">
-            <p>Ishar Ghura © 2024
-            </p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+        </a>
+        <a href="https://github.com/isharghura/MathMaster" class="projectlink" target="_blank">
+            <div class="project">
+                <img src="images/mathmaster.png" alt="mathmaster" class="projectImg">
+                <h3>Math Master</h3>
+                <p>App to practice arithmetic</p>
+            </div>
+        </a>
+        </section>
 
 </body>
 
