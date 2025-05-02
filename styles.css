@@ -34,7 +34,7 @@ header a {
     font-size: 20px;
 }
 
-.upto {
+.section-header {
     font-weight: 600;
     font-size: 24px;
 }
@@ -87,6 +87,132 @@ header a {
     object-fit: cover;
 }
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #68b4ff;
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #68b4ff;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    margin-left: -3px;
+    border-radius: 3px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 4px solid #68b4ff;
+    border-radius: 50%;
+    top: 20px;
+    left: -50px;
+    z-index: 1;
+}
+
+.timeline-item.hidden {
+    display: none;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.timeline-text {
+    flex: 1;
+    text-align: left;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    width: 100%
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.timeline-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.timeline-position {
+    font-size: 1em;
+    color: #555;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.experience-type {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.technical .experience-type {
+    background-color: #d5f5e3;
+    color: #27ae60;
+}
+
+.leadership .experience-type {
+    background-color: #fadbd8;
+    color: #c0392b;
+}
 @media only screen and (max-width: 600px) {
     .projects {
             display: grid;
