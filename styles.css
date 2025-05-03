@@ -221,4 +221,30 @@ header a {
             max-width: 1000px;
             margin: 0 auto;
     }
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .experience-type {
+        position: static;
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    .timeline-date {
+        margin-right: 0;
+    }
+
+    .timeline::after {
+        display: none;
+    }
+
+    .timeline-item::after {
+        display: none;
+    }
 }
