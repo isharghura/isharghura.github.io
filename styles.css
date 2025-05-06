@@ -58,6 +58,7 @@ header a {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
 }
 
 .project:hover {
@@ -67,8 +68,7 @@ header a {
 
 .project h3 {
     margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px 0 10px;
     margin-top: 10px;
     font-weight: 400;
 }
@@ -77,13 +77,14 @@ header a {
     font-weight: 300;
     margin-top: 0;
     padding: 5px;
+    flex-grow: 1;
 }
 
 .projectImg {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    height: 210px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -91,7 +92,7 @@ header a {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
 }
 
