@@ -191,12 +191,12 @@ header a {
     margin-bottom: 5px;
 }
 
-.timeline-title {
+.timeline-position {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.timeline-position {
+.timeline-title {
     font-size: 1em;
     color: #555;
     margin-top: 2px;
