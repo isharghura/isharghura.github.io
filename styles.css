@@ -40,16 +40,22 @@ header a {
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .projectlink {
+    flex: 0 0 320px;
+    /* Fixed basis ~ your card width; 0 grow, 0 shrink → perfect centering */
+    /* Or flex: 0 1 320px; to allow slight shrinking on very small screens */
     text-decoration: none;
     color: black;
+    min-width: 280px;
+    /* Prevents cards from becoming too narrow */
 }
 
 .project {
