@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Tab navigation
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            const tabId = this.getAttribute('data-tab');
+            tabContents.forEach(content => {
+                if (content.id === tabId + '-tab') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Experience filter buttons
     const filterButtons = document.querySelectorAll('.filter-btn');
     const timelineItems = document.querySelectorAll('.timeline-item');
 
