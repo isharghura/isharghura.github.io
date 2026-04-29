@@ -1,3 +1,126 @@
+/* Dark Mode Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 20px;
+    color: #1a1a2e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode .timeline-content {
+    padding: 20px 25px;
+    background: #181c24;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+body.dark-mode .timeline-position {
+    color: #fff;
+}
+body.dark-mode .timeline-title {
+    color: #b0b0b0;
+}
+body.dark-mode .timeline-date {
+    color: #7bb6ff;
+}
+body.dark-mode .project {
+    border: 1.5px solid rgba(255,255,255,0.10);
+}
+body.dark-mode .projectlink a,
+body.dark-mode .project a {
+    color: #7bb6ff;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 100%);
+    color: #e0e0e0;
+}
+
+body.dark-mode header h1 {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.dark-mode header a {
+    color: #68b4ff;
+}
+
+body.dark-mode header a:hover {
+    color: #a8d4ff;
+    background: rgba(104, 180, 255, 0.15);
+}
+
+body.dark-mode .section-header {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tab-btn {
+    background: #1a1a2e;
+    color: #a0a0a0;
+}
+
+body.dark-mode .tab-btn:hover {
+    color: #e0e0e0;
+}
+
+body.dark-mode .tab-btn.active {
+    background: linear-gradient(135deg, #4a90d9, #68b4ff);
+    color: white;
+}
+
+body.dark-mode .project {
+    background: #181c24;
+    color: #e0e0e0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .project h3 {
+    color: #ffffff;
+}
+body.dark-mode .project p {
+    color: #b0b0b0;
+}
+body.dark-mode .projectlink {
+    color: #e0e0e0;
+}
+body.dark-mode .project:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .projectImg,
+body.dark-mode .projectVid {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+body.dark-mode .project:hover .projectImg,
+body.dark-mode .project:hover .projectVid {
+    opacity: 1;
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     margin: 0;
