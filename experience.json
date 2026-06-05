@@ -1,0 +1,155 @@
+[
+  {
+    "type": "technical",
+    "dateRange": "May 2026 - Aug 2026",
+    "position": "Machine Learning Engineer Intern",
+    "company": "Frizzle",
+    "url": "https://www.frizzle.com",
+    "logo": "images/frizzle.png",
+    "description": "Backed by Y Combinator, White House Partner"
+  },
+  {
+    "type": "technical",
+    "dateRange": "May 2026 - Aug 2026",
+    "position": "Software Engineer Fellow",
+    "company": "G-Research",
+    "url": "https://g-research.github.io",
+    "logo": "images/gresearch.jpeg",
+    "description": "Open-source infra engineering on Armada, a large-scale Kubernetes batch job scheduler"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Jan 2026 - Apr 2026",
+    "position": "Machine Learning Engineer Intern",
+    "company": "JSI Telecom",
+    "url": "https://www.jsitelecom.com",
+    "logo": "images/jsigroup_logo.jpg",
+    "description": "Building benchmarking systems to evaluate translation and vision AI models, with MLflow tracking and support for Triton, vLLM, and cloud-native inference"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Mar 2025 - Mar 2026",
+    "position": "Founder",
+    "company": "HackVerify",
+    "url": "https://hackverify.vercel.app",
+    "logo": "images/hackverify.png",
+    "description": "Automating hackathon cheat checks"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Sep 2025 - Dec 2025",
+    "position": "AI Infrastructure Engineer Intern",
+    "company": "JSI Telecom",
+    "url": "https://www.jsitelecom.com",
+    "logo": "images/jsigroup_logo.jpg",
+    "description": "Building and deploying cloud infrastructure solutions that are secure, scalable, and optimized for AI and machine learning workloads"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Sep 2025 - Dec 2025",
+    "position": "Software Engineer Fellow",
+    "company": "Apache Airflow",
+    "url": "https://fellowship.mlh.io/programs/software-engineering",
+    "logo": "images/airflow.png",
+    "description": "Contributing to Apache Airflow, collaborating and guidance from AWS engineers, sponsored by RBC, as part of the MLH Fellowship"
+  },
+  {
+    "type": "leadership",
+    "dateRange": "Oct 2025 - Dec 2025",
+    "position": "Scholar",
+    "company": "Cansbridge Scholars",
+    "url": "https://www.cansbridgescholars.com",
+    "logo": "images/cansbridge.jpg",
+    "description": "Cansbridge Scholars seeks out and selects ambitious 18-25 year old individuals who strive to push towards asymmetric excellence together"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Jun 2025 - Sep 2025",
+    "position": "Production Engineer Fellow",
+    "company": "Meta",
+    "url": "https://fellowship.mlh.io/programs/production-engineering-sre",
+    "logo": "images/meta.png",
+    "description": "Worked collaboratively within a pod under the guidance of Meta engineering mentors and gaining hands-on experience in Production Engineering as part of the MLH Fellowship"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Apr 2024 - Sep 2025",
+    "position": "Software Engineer",
+    "company": "SunnySide",
+    "url": "https://www.sunnyside.care",
+    "logo": "images/sunnyside.jpg",
+    "description": "Implemented Google Sign-In with Supabase Auth and built responsive, well-tested React Native components from Figma designs to deliver seamless authentication and mood-tracking experiences in the SunnySide mobile and web app"
+  },
+  {
+    "type": "leadership",
+    "dateRange": "Feb 2024 - Apr 2025",
+    "position": "Organizer",
+    "company": "cuHacking",
+    "url": "https://cuhacking.ca",
+    "logo": "images/cuhacking_logo.png",
+    "description": "Organizing Carleton University's Official Hackathon"
+  },
+  {
+    "type": "leadership",
+    "dateRange": "Apr 2024 - Apr 2025",
+    "position": "Computer Science Mentor",
+    "company": "Carleton University",
+    "url": "https://sssc.carleton.ca",
+    "logo": "images/carleton_university_logo.jpg",
+    "description": "Helping computer science students define and achieve their academic, career, and social goals"
+  },
+  {
+    "type": "leadership",
+    "dateRange": "Apr 2024 - Apr 2025",
+    "position": "Ambassador",
+    "company": "IBM",
+    "url": "https://www.ibm.com/z",
+    "logo": "images/ibm_logo.jpg",
+    "description": "Advocated for mainframe technology and enterprise computing on the Carleton University campus"
+  },
+  {
+    "type": "leadership",
+    "dateRange": "Nov 2024 - Apr 2025",
+    "position": "Co-Founder and Co-President",
+    "company": "Carleton IBM Z Club",
+    "url": null,
+    "logo": "images/ibmzclub.jpg",
+    "description": "Created a community for tech, mainframe, and enterprise computing enthusiasts"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Oct 2024 - Apr 2025",
+    "position": "Developer",
+    "company": "Carleton Blueprint",
+    "url": "https://carletonblueprint.org",
+    "logo": "images/cublueprint_logo.jpg",
+    "description": "Tech for social good, built by students."
+  },
+  {
+    "type": "technical",
+    "dateRange": "Jun 2024 - Dec 2024",
+    "position": "Data Engineer Intern",
+    "company": "Global Affairs Canada",
+    "url": "https://www.international.gc.ca/global-affairs-affaires-mondiales/home-accueil.aspx?lang=eng",
+    "logo": "images/gaclogo.jpg",
+    "description": "Implemented ETL pipelines, wrote T-SQL queries, and created functions to ensure accurate data migration while collaborating with teams to streamline workflows"
+  },
+  {
+    "type": "technical",
+    "dateRange": "Feb 2024 - May 2024",
+    "position": "Embedded Software Engineer",
+    "company": "CU InSpace",
+    "url": "https://www.cuinspace.ca",
+    "logo": "images/cuinspace_logo.jpg",
+    "description": "Wrote C code that interfaces with hardware and sends real-time data over LoRa using QNX"
+  },
+  {
+    "type": "leadership",
+    "dateRange": "Sep 2021 - Jun 2022",
+    "position": "President",
+    "company": "Chess Club of Oakville Trafalgar High School",
+    "url": null,
+    "logo": "images/oakville_trafalgar_high_school_logo.jpg",
+    "description": "Lead the chess club at OTHS"
+  }
+]
