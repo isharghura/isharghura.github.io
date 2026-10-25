@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Robot drives with ultrasonic pings, its camera finds a crack in the wall, and an on-device vision model reports it">
+<title>Robot drives with ultrasonic pings, its camera finds a crack in the wall, and an on-device vision model reports it</title><style>
+.bg{fill:#f4f5f7}
+.box{fill:#fff;stroke:#d5d8de;stroke-width:2}
+.term{fill:#1f2328;stroke:none}
+.hl{fill:none;stroke:#2563eb;stroke-width:3}
+.okl{fill:none;stroke:#16a34a;stroke-width:3}.badl{fill:none;stroke:#dc2626;stroke-width:3}.runl{fill:none;stroke:#d97706;stroke-width:3}
+.okb{fill:#e8f6ee;stroke:#16a34a;stroke-width:2.5}
+.badb{fill:#fdecec;stroke:#dc2626;stroke-width:2.5}
+.runb{fill:#fff6e0;stroke:#d97706;stroke-width:2.5}
+.t{font:600 19px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#1f2328}
+.s{font:500 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#6b7280}
+.tt{font:500 17px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e6edf3}
+.ok{fill:#16a34a}.bad{fill:#dc2626}.acc{fill:#2563eb}
+text.ok,text.bad,text.acc{font:700 17px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.ln{stroke:#c2c7cf;stroke-width:2.5;fill:none}
+.lnacc{stroke:#2563eb;stroke-width:3;fill:none}
+.wave{stroke:#2563eb;stroke-width:3.5;fill:none;stroke-linecap:round}
+.dot{fill:#2563eb}
+.cell{fill:#eceef2}
+.ic{fill:#374151}.ics{fill:none;stroke:#374151;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}.ics.thin{stroke-width:2}
+.icb{fill:#fff}.icw{fill:#fff;stroke:#d5d8de;stroke-width:1.5}
+.icT{font:800 19px -apple-system,Helvetica,Arial,sans-serif;fill:#374151}
+.gG{font:800 23px -apple-system,Helvetica,Arial,sans-serif;fill:#4285f4}
+.cone{fill:#2563eb;opacity:.14}
+.crack{stroke:#4b5563;stroke-width:3;fill:none;stroke-linejoin:round}
+.wall{fill:#e3e5ea;stroke:#cfd3da;stroke-width:2}
+@media (prefers-color-scheme:dark){
+.bg{fill:#19191d}
+.box{fill:#232329;stroke:#3a3a42}
+.term{fill:#0d0d10}
+.hl,.lnacc{stroke:#6ea8ff}.wave{stroke:#6ea8ff}
+.okl{stroke:#22c55e}.badl{stroke:#ef4444}.runl{stroke:#f59e0b}
+.okb{fill:#12301f;stroke:#22c55e}.badb{fill:#3a1414;stroke:#ef4444}.runb{fill:#33270c;stroke:#f59e0b}
+.t{fill:#ededed}.s{fill:#9a9aa0}
+.ok{fill:#22c55e}.bad{fill:#ef4444}.acc,.dot{fill:#6ea8ff}
+.ln{stroke:#4a4a52}.cell{fill:#2c2c33}
+.ic{fill:#d4d4d8}.ics{stroke:#d4d4d8}.icb{fill:#232329}.icw{fill:#fff;stroke:none}.icT{fill:#d4d4d8}
+.cone{fill:#6ea8ff;opacity:.18}.crack{stroke:#a1a1aa}.wall{fill:#26262c;stroke:#3a3a42}
+}
+</style>
+<rect width="640" height="400" class="bg"/>
+<path d="M0 340 H640" class="ln"/><rect x="520" y="40" width="120" height="300" class="wall"/><path d="M560 110 L548 140 L566 162 L552 196 L570 226 L558 250" class="crack"/><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0;0.0375;0.9;0.9375;1"/><g><animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite" values="0 0;0 0;280 0;280 0" keyTimes="0;0.0375;0.325;1"/><rect x="20" y="270" width="120" height="40" rx="8" class="box"/><g transform="translate(48 322)"><g><animateTransform attributeName="transform" type="rotate" dur="8s" repeatCount="indefinite" values="0;0;540;540" keyTimes="0;0.0375;0.325;1"/><circle r="17" class="ics"/><path d="M0 -17 V17 M-17 0 H17" class="ics thin"/></g></g><g transform="translate(112 322)"><g><animateTransform attributeName="transform" type="rotate" dur="8s" repeatCount="indefinite" values="0;0;540;540" keyTimes="0;0.0375;0.325;1"/><circle r="17" class="ics"/><path d="M0 -17 V17 M-17 0 H17" class="ics thin"/></g></g><rect x="98" y="232" width="8" height="38" class="ic"/><rect x="84" y="214" width="36" height="22" rx="5" class="ic"/><circle cx="114" cy="225" r="5" class="acc"/><circle cx="140" cy="284" r="4" class="ic"/><circle cx="140" cy="296" r="4" class="ic"/><text x="80" y="296" class="s" text-anchor="middle">Pi 4</text><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.05;0.06;0.1;1"/><path d="M144 282.4 Q155.8 290 144 297.6" class="wave"/><path d="M156 275.2 Q171.4 290 156 304.8" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.1125;0.1225;0.1625;1"/><path d="M144 282.4 Q155.8 290 144 297.6" class="wave"/><path d="M156 275.2 Q171.4 290 156 304.8" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.175;0.185;0.225;1"/><path d="M144 282.4 Q155.8 290 144 297.6" class="wave"/><path d="M156 275.2 Q171.4 290 156 304.8" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.2375;0.2475;0.2875;1"/><path d="M144 282.4 Q155.8 290 144 297.6" class="wave"/><path d="M156 275.2 Q171.4 290 156 304.8" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.3;0.31;0.35;1"/><path d="M144 282.4 Q155.8 290 144 297.6" class="wave"/><path d="M156 275.2 Q171.4 290 156 304.8" class="wave"/></g></g></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.35;0.3875;0.9;0.9375;1"/><path d="M400 225 L530 90 L530 270 Z" class="cone"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.425;0.4625;0.9;0.9375;1"/><rect x="536" y="100" width="46" height="160" rx="4" class="badl" stroke-dasharray="6 4"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.4875;0.525;0.9;0.9375;1"/><rect x="20" y="30" width="300" height="86" rx="12" class="box"/><text x="40" y="62" class="s" text-anchor="start">LLaVA-Phi3 on the Pi</text><text x="40" y="94" class="bad" text-anchor="start">⚠ crack detected</text></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.5625;0.6;0.9;0.9375;1"/><text x="170" y="146" class="s" text-anchor="middle">offline · no cloud</text></g>
+</svg>

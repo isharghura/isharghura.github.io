@@ -3,132 +3,275 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="logo">Ishar Ghura</title>
+    <title>Ishar Ghura</title>
+    <meta name="description" content="Ishar Ghura: CS at Carleton. ML engineer at Frizzle (YC S25) and JSI; MLH Fellow with G-Research and Meta.">
+    <meta property="og:title" content="Ishar Ghura">
+    <meta property="og:description" content="ML engineer at Frizzle (YC S25) and JSI; MLH Fellow with G-Research and Meta.">
+    <meta property="og:url" content="https://isharghura.com">
+    <meta property="og:type" content="website">
+    <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGGPX73T5P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VGGPX73T5P');
+    </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGGPX73T5P"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-VGGPX73T5P');
-</script>
-
 <body>
+    <main>
+        <header class="hero">
+            <h1>Ishar Ghura</h1>
+            <p class="tagline">
+                I build ML systems and the infrastructure they run on. Computer Science at Carleton University, graduating 2027.
+            </p>
+            <p class="previously">
+                ML engineer at <strong>Frizzle (YC S25)</strong> and <strong>JSI</strong>. Worked with <strong>G-Research</strong> and <strong>Meta</strong> as an MLH Fellow on open-source and production engineering.
+            </p>
 
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-    </button>
+            <div class="contact">
+                <button class="email" type="button" data-email="ishar.ghuras@gmail.com" aria-label="Copy email address">
+                    <span class="email-text">ishar.ghuras@gmail.com</span>
+                    <span class="email-hint">Copy</span>
+                </button>
+            </div>
 
-    <header>
-        <h1>Ishar Ghura</h1>
-        <a href="https://linkedin.com/in/ishar-ghura" target="_blank">LinkedIn</a>
-        <a href="https://github.com/isharghura" target="_blank">GitHub</a>
-        <a href="https://x.com/isharghura" target="_blank">Twitter</a>
-        <a href="mailto:ishar.ghuras@gmail.com?subject=Hello&body=Hi%20there,%20I%20want%20to%20reach%20out">Email</a>
-    </header>
+            <nav class="links">
+                <a href="https://linkedin.com/in/ishar-ghura" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/isharghura" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://x.com/isharghura" target="_blank" rel="noopener">X</a>
+                <a href="https://www.youtube.com/@isharguitar" target="_blank" rel="noopener">YouTube</a>
+            </nav>
+        </header>
 
-    <nav class="tabs">
-        <button class="tab-btn active" data-tab="projects">Projects</button>
-        <button class="tab-btn" data-tab="experience">Experience</button>
-    </nav>
+        <section>
+            <h2>Experience</h2>
+            <div class="grid">
+                <a class="card" href="https://chalkalong.com" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/chalkalong.webp" alt="Chalkalong demo: photographing a derivative problem and watching the narrated whiteboard lesson">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img class="logo" src="images/chalkalong-icon.png" alt="">
+                            <div>
+                                <h3>Founder</h3>
+                                <p class="org">Chalkalong · Sep 2026 – Present</p>
+                            </div>
+                        </div>
+                        <p>Snap a photo of a math problem and get a narrated, step-by-step whiteboard lesson you can interrupt with questions.</p>
+                    </div>
+                </a>
 
-    <div id="projects-tab" class="tab-content">
-        <h3 class="section-header">What I've been up to</h3>
-        <section class="projects">
-        <a href="https://chalkalong.com" class="projectlink" target="_blank">
-            <div class="project">
-                <img src="images/chalkalong-icon-square.png" alt="chalkalong" class="projectImg">
-                <h3>Chalkalong</h3>
-                <p>Snap a math problem and get a narrated whiteboard lesson</p>
-            </div>
-        </a>
-        <a href="https://github.com/JowiAoun/beluga" class="projectlink" target="_blank">
-            <div class="project">
-                <img src="images/image.png" alt="beluga" class="projectImg">
-                <h3>Beluga</h3>
-                <p>Directional warning sounds for blind and low-vision pedestrians, and a fix-first hazard list for the city</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/autonomous-inspection-robot" class="projectlink" target="_blank">
-            <div class="project">
-                <img src="images/robot.jpg" alt="autonomous-inspection-robot" class="projectImg">
-                <h3>Autonomous Inspection Robot</h3>
-                <p>A robot that can autonomously inspect infrastructure for damage or wear</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/Shrimp-Check" class="projectlink" target="_blank">
-            <div class="project">
-                <video src="videos/shrimpcheck.mp4" autoplay loop playsinline muted class="projectVid"></video>
-                <h3>Shrimp Check</h3>
-                <p>Posture detection using computer vision</p>
-            </div>
-        </a>
-        <a href="https://hackverify.vercel.app" class="projectlink" target="_blank">
-            <div class="project">
-                <img src="images/hackverify.jpg" alt="hackverify" class="projectImg">
-                <h3>HackVerify</h3>
-                <p>Helping hackathons automate cheat checks</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/uOttaHack7" class="projectlink" target="_blank">
-            <div class="project">
-                <video src="videos/roombavideo.mp4" autoplay loop playsinline muted class="projectVid"></video>
-                <h3>QNX Roomba</h3>
-                <p>A roomba controlled by QNX that follows light</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/FoodBank-AI" class="projectlink" target="_blank">
-            <div class="project">
-                <video src="videos/foodbankaivid.mp4" autoplay loop playsinline muted class="projectVid"></video>
-                <h3>FoodBank AI</h3>
-                <p>Food recognition for food bank donation</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/aichatbot" class="projectlink" target="_blank">
-            <div class="project">
-                <video src="videos/aichatbotvid.mp4" autoplay loop playsinline muted class="projectVid"></video>
-                <h3>AI Chatbot</h3>
-                <p>An intelligent AI Chatbot to help you out with everyday tasks</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/chessbot" class="projectlink" target="_blank">
-            <div class="project">
-                <video src="videos/chessbotvid.mp4" autoplay loop playsinline muted class="projectVid"></video>
-                <h3>Discord Chess Bot</h3>
-                <p>A Discord bot that plays chess against users in a server</p>
-            </div>
-        </a>
-        <a href="https://github.com/isharghura/MathMaster" class="projectlink" target="_blank">
-            <div class="project">
-                <img src="images/mathmaster.png" alt="mathmaster" class="projectImg">
-                <h3>Math Master</h3>
-                <p>App to practice arithmetic</p>
-            </div>
-        </a>
-    </section>
-    </div>
+                <a class="card" href="https://www.frizzle.com" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/frizzle.svg" alt="Diagram: student work routed across Vertex AI, Azure, Bedrock and OpenAI, then scored by an LLM judge">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img class="logo" src="images/frizzle.png" alt="">
+                            <div>
+                                <h3>ML Engineer Intern</h3>
+                                <p class="org">Frizzle (YC S25) · May–Aug 2026</p>
+                            </div>
+                        </div>
+                        <p>Built the LLM inference engine and LLM-as-a-judge evals for grading handwritten math. Fine-tuned Gemini on real student data.</p>
+                    </div>
+                </a>
 
-    <div id="experience-tab" class="tab-content" style="display: none;">
-        <h3 class="section-header">My experience</h3>
-        
-        <section class="experience-section">
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="technical">Technical</button>
-            <button class="filter-btn" data-filter="leadership">Leadership</button>
-        </div>
+                <a class="card" href="https://armadaproject.io" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/armada.svg" alt="Diagram: E2E test CLI, then Armada scheduling jobs across Kubernetes clusters">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img class="logo" src="images/gresearch.jpeg" alt="">
+                            <div>
+                                <h3>Software Engineer Fellow</h3>
+                                <p class="org">G-Research × MLH · May–Aug 2026</p>
+                            </div>
+                        </div>
+                        <p>Open-source infra on Armada, a multi-cluster Kubernetes batch scheduler. Built E2E test tooling and redesigned the Spark-on-K8s build.</p>
+                    </div>
+                </a>
 
-        <div id="timeline-container"></div>
-    </section>
-    </div>
+                <a class="card" href="https://www.jsitelecom.com" target="_blank" rel="noopener">
+                    <img loading="lazy" class="preview" src="previews/jsi-ml.svg" alt="Diagram: benchmark grid scoring models on accuracy, latency, cost and policy">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/jsigroup_logo.jpg" alt="">
+                            <div>
+                                <h3>ML Engineer Intern</h3>
+                                <p class="org">JSI · Jan–Apr 2026</p>
+                            </div>
+                        </div>
+                        <p>Built a benchmarking platform that evaluates 50+ models across 100+ language pairs, running on vLLM, Triton, and Kubernetes.</p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://www.jsitelecom.com" target="_blank" rel="noopener">
+                    <img loading="lazy" class="preview" src="previews/jsi-infra.svg" alt="Diagram: Postgres primary fails over to a replica while backups stream to object storage">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/jsigroup_logo.jpg" alt="">
+                            <div>
+                                <h3>AI Infra Engineer Intern</h3>
+                                <p class="org">JSI · Sep–Dec 2025 · Stars Award</p>
+                            </div>
+                        </div>
+                        <p>Ran highly available PostgreSQL on Kubernetes (AWS) for AI workloads, with point-in-time recovery and Prometheus/Grafana observability.</p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://airflow.apache.org" target="_blank" rel="noopener">
+                    <img loading="lazy" class="preview" src="previews/airflow.svg" alt="Diagram: an Airflow DAG running tasks in order">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/airflow.png" alt="">
+                            <div>
+                                <h3>Software Engineer Fellow</h3>
+                                <p class="org">Apache Airflow × MLH · Sep–Dec 2025</p>
+                            </div>
+                        </div>
+                        <p>Contributed to Apache Airflow with guidance from AWS engineers. Sponsored by RBC.</p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://fellowship.mlh.io/programs/production-engineering-sre" target="_blank" rel="noopener">
+                    <img loading="lazy" class="preview" src="previews/meta.svg" alt="Diagram: requests through an NGINX rate limiter to app replicas">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/meta.png" alt="">
+                            <div>
+                                <h3>Production Engineer Fellow</h3>
+                                <p class="org">Meta × MLH · Jun–Sep 2025</p>
+                            </div>
+                        </div>
+                        <p>Picked as 1 of 44 from 4,000+ applicants for the Meta × MLH fellowship. Tuned NGINX to handle 10k+ req/min at 99.9% uptime and cut manual deploy time by 90%.</p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://hackverify.vercel.app" target="_blank" rel="noopener">
+                    <img loading="lazy" class="preview" src="previews/hackverify.svg" alt="Diagram: Devpost project page to team members, their past GitHub repos, compared against the submission and flagged">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/hackverify.png" alt="">
+                            <div>
+                                <h3>Founder</h3>
+                                <p class="org">HackVerify · Mar 2025 – Mar 2026</p>
+                            </div>
+                        </div>
+                        <p>Automated hackathon plagiarism detection that flags suspicious submissions using Devpost links.</p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://www.international.gc.ca/global-affairs-affaires-mondiales/home-accueil.aspx?lang=eng" target="_blank" rel="noopener">
+                    <img loading="lazy" class="preview" src="previews/gac.svg" alt="Diagram: ETL pipeline moving rows from source to target">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/gaclogo.jpg" alt="">
+                            <div>
+                                <h3>Data Engineer Intern</h3>
+                                <p class="org">Global Affairs Canada · Jun–Dec 2024</p>
+                            </div>
+                        </div>
+                        <p>Built ETL pipelines and T-SQL migrations to move government data accurately between systems.</p>
+                    </div>
+                </a>
+
+                <div class="card">
+                    <img loading="lazy" class="preview" src="previews/sunnyside.svg" alt="Diagram: Google Sign-In through Supabase Auth into a mood check-in screen">
+                    <div class="card-body">
+                        <div class="card-head">
+                            <img loading="lazy" class="logo" src="images/sunnyside.jpg" alt="">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <p class="org">SunnySide · Apr 2024 – Sep 2025</p>
+                            </div>
+                        </div>
+                        <p>Built Google Sign-In with Supabase Auth and mood-tracking React Native screens for a mental health app.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="also-title">Also</h3>
+            <ul class="also">
+                <li><a href="https://www.cansbridgescholars.com" target="_blank" rel="noopener">Cansbridge Scholar</a><span>2025</span></li>
+                <li><a href="https://cuhacking.ca" target="_blank" rel="noopener">Organizer, cuHacking</a><span>2024–25</span></li>
+                <li><span><a href="https://www.ibm.com/z" target="_blank" rel="noopener">IBM Z Ambassador</a> · Co-founder, Carleton IBM Z Club</span><span>2024–25</span></li>
+                <li><a href="https://sssc.carleton.ca" target="_blank" rel="noopener">Computer Science Mentor, Carleton</a><span>2024–25</span></li>
+                <li><a href="https://carletonblueprint.org" target="_blank" rel="noopener">Developer, Carleton Blueprint</a><span>2024–25</span></li>
+                <li><a href="https://www.cuinspace.ca" target="_blank" rel="noopener">Embedded Software, CU InSpace</a><span>2024</span></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="grid">
+                <a class="card" href="https://github.com/isharghura/autonomous-inspection-robot" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/robot.svg" alt="Diagram: the robot drives with ultrasonic pings, its camera finds a crack in a wall, and an on-device vision model reports it" loading="lazy">
+                    <div class="card-body">
+                        <h3>Autonomous Inspection Robot</h3>
+                        <p>Raspberry Pi robot that finds cracks and leaks using an offline vision LLM.</p>
+                    </div>
+                </a>
+                <a class="card" href="https://github.com/JowiAoun/beluga" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/beluga.svg" alt="Diagram: a walker hears a warning from the left as a pole approaches, and the hazard lands on the city fix-first map" loading="lazy">
+                    <div class="card-body">
+                        <h3>Beluga</h3>
+                        <p>Directional warning sounds for blind and low-vision pedestrians, plus a fix-first hazard list for the city.</p>
+                    </div>
+                </a>
+                <a class="card" href="https://github.com/isharghura/Shrimp-Check" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/shrimpcheck.webp" alt="Shrimp Check demo" loading="lazy">
+                    <div class="card-body">
+                        <h3>Shrimp Check</h3>
+                        <p>Posture detection with computer vision.</p>
+                    </div>
+                </a>
+                <a class="card" href="https://github.com/isharghura/uOttaHack7" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/roomba.webp" alt="QNX Roomba demo" loading="lazy">
+                    <div class="card-body">
+                        <h3>QNX Roomba</h3>
+                        <p>A Roomba running QNX that follows light.</p>
+                    </div>
+                </a>
+                <a class="card" href="https://github.com/isharghura/FoodBank-AI" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/foodbankai.webp" alt="FoodBank AI demo" loading="lazy">
+                    <div class="card-body">
+                        <h3>FoodBank AI</h3>
+                        <p>Food recognition for food bank donations.</p>
+                    </div>
+                </a>
+                <a class="card" href="https://github.com/isharghura/aichatbot" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/aichatbot.webp" alt="AI Chatbot demo" loading="lazy">
+                    <div class="card-body">
+                        <h3>AI Chatbot</h3>
+                        <p>An assistant for everyday tasks.</p>
+                    </div>
+                </a>
+                <a class="card" href="https://github.com/isharghura/chessbot" target="_blank" rel="noopener">
+                    <img class="preview" src="previews/chessbot.webp" alt="Discord Chess Bot demo" loading="lazy">
+                    <div class="card-body">
+                        <h3>Discord Chess Bot</h3>
+                        <p>Play chess against a bot inside any Discord server.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="guitar">
+            <h2>Outside of work</h2>
+            <p>I play guitar. Covers and originals are on <a href="https://www.youtube.com/@isharguitar" target="_blank" rel="noopener">YouTube&nbsp;→</a></p>
+        </section>
+
+        <footer>
+            <p>Want to chat? <button class="email inline" type="button" data-email="ishar.ghuras@gmail.com" aria-label="Copy email address"><span class="email-text">ishar.ghuras@gmail.com</span><span class="email-hint">Copy</span></button></p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="A walker hears a warning from the left as a pole approaches, and the hazard lands on the city fix-first map">
+<title>A walker hears a warning from the left as a pole approaches, and the hazard lands on the city fix-first map</title><style>
+.bg{fill:#f4f5f7}
+.box{fill:#fff;stroke:#d5d8de;stroke-width:2}
+.term{fill:#1f2328;stroke:none}
+.hl{fill:none;stroke:#2563eb;stroke-width:3}
+.okl{fill:none;stroke:#16a34a;stroke-width:3}.badl{fill:none;stroke:#dc2626;stroke-width:3}.runl{fill:none;stroke:#d97706;stroke-width:3}
+.okb{fill:#e8f6ee;stroke:#16a34a;stroke-width:2.5}
+.badb{fill:#fdecec;stroke:#dc2626;stroke-width:2.5}
+.runb{fill:#fff6e0;stroke:#d97706;stroke-width:2.5}
+.t{font:600 19px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#1f2328}
+.s{font:500 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#6b7280}
+.tt{font:500 17px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e6edf3}
+.ok{fill:#16a34a}.bad{fill:#dc2626}.acc{fill:#2563eb}
+text.ok,text.bad,text.acc{font:700 17px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.ln{stroke:#c2c7cf;stroke-width:2.5;fill:none}
+.lnacc{stroke:#2563eb;stroke-width:3;fill:none}
+.wave{stroke:#2563eb;stroke-width:3.5;fill:none;stroke-linecap:round}
+.dot{fill:#2563eb}
+.cell{fill:#eceef2}
+.ic{fill:#374151}.ics{fill:none;stroke:#374151;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}.ics.thin{stroke-width:2}
+.icb{fill:#fff}.icw{fill:#fff;stroke:#d5d8de;stroke-width:1.5}
+.icT{font:800 19px -apple-system,Helvetica,Arial,sans-serif;fill:#374151}
+.gG{font:800 23px -apple-system,Helvetica,Arial,sans-serif;fill:#4285f4}
+.cone{fill:#2563eb;opacity:.14}
+.crack{stroke:#4b5563;stroke-width:3;fill:none;stroke-linejoin:round}
+.wall{fill:#e3e5ea;stroke:#cfd3da;stroke-width:2}
+@media (prefers-color-scheme:dark){
+.bg{fill:#19191d}
+.box{fill:#232329;stroke:#3a3a42}
+.term{fill:#0d0d10}
+.hl,.lnacc{stroke:#6ea8ff}.wave{stroke:#6ea8ff}
+.okl{stroke:#22c55e}.badl{stroke:#ef4444}.runl{stroke:#f59e0b}
+.okb{fill:#12301f;stroke:#22c55e}.badb{fill:#3a1414;stroke:#ef4444}.runb{fill:#33270c;stroke:#f59e0b}
+.t{fill:#ededed}.s{fill:#9a9aa0}
+.ok{fill:#22c55e}.bad{fill:#ef4444}.acc,.dot{fill:#6ea8ff}
+.ln{stroke:#4a4a52}.cell{fill:#2c2c33}
+.ic{fill:#d4d4d8}.ics{stroke:#d4d4d8}.icb{fill:#232329}.icw{fill:#fff;stroke:none}.icT{fill:#d4d4d8}
+.cone{fill:#6ea8ff;opacity:.18}.crack{stroke:#a1a1aa}.wall{fill:#26262c;stroke:#3a3a42}
+}
+</style>
+<rect width="640" height="400" class="bg"/>
+<path d="M60 392 L170 120 H250 L360 392 Z" class="cell"/><path d="M140 392 L196 120 H224 L280 392 Z" fill="none" class="lnacc" stroke-dasharray="7 7" opacity=".55"/><text x="210" y="108" class="s" text-anchor="middle">walking path</text><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0;0.0375;0.9;0.9375;1"/><rect class="ic" rx="3"><animate attributeName="x" dur="8s" repeatCount="indefinite" values="186;186;150;150" keyTimes="0;0.0375;0.4;1"/><animate attributeName="y" dur="8s" repeatCount="indefinite" values="124;124;168;168" keyTimes="0;0.0375;0.4;1"/><animate attributeName="width" dur="8s" repeatCount="indefinite" values="5;5;14;14" keyTimes="0;0.0375;0.4;1"/><animate attributeName="height" dur="8s" repeatCount="indefinite" values="30;30;140;140" keyTimes="0;0.0375;0.4;1"/></rect></g><g transform="translate(210 330) scale(2.3)"><circle cx="0" cy="-9" r="8" class="ic"/><path d="M-14 17 C-14 4 -7 0 0 0 C7 0 14 4 14 17 Z" class="ic"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0;0.0375;0.9;0.9375;1"/><text x="210" y="386" class="s" text-anchor="middle">phone reads depth 10×/s</text></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.125;0.135;0.175;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.2125;0.2225;0.2625;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.2875;0.2975;0.3375;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.3375;0.3475;0.3875;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.375;0.385;0.425;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.4063;0.4163;0.4562;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.4375;0.4475;0.4875;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.4625;0.4725;0.5125;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;0;0" keyTimes="0;0.4875;0.4975;0.5375;1"/><path d="M172 291 Q154 302 172 313" class="wave"/><path d="M158 278.4 Q131.6 302 158 325.6" class="wave"/><path d="M144 265.8 Q109.19999999999999 302 144 338.2" class="wave"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.425;0.4625;0.9;0.9375;1"/><rect x="10" y="150" width="128" height="42" rx="21" class="box"/><text x="74" y="177" class="t" text-anchor="middle">pole, left</text></g><rect x="400" y="24" width="224" height="352" rx="14" class="box"/><text x="512" y="54" class="t" text-anchor="middle">city fix-first</text><rect x="416" y="68" width="192" height="160" rx="8" class="cell"/><path d="M416 120 H608 M416 178 H608 M470 68 V228 M548 68 V228" class="ln" stroke="#fff" opacity=".9"/><circle r="6" class="bad" opacity="0"><animateMotion dur="8s" repeatCount="indefinite" path="M240 290 C320 260 380 150 500 150" keyPoints="0;0;1;1" keyTimes="0;0.5375;0.625;1" calcMode="linear"/><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.5375;0.5415;0.625;0.629;1"/></circle><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.625;0.6625;0.9;0.9375;1"/><path d="M500 150 c-9 -11 -13 -18 -13 -24 a13 13 0 0 1 26 0 c0 6 -4 13 -13 24 Z" class="bad"/><circle cx="500" cy="126" r="5" fill="#fff"/></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.675;0.7125;0.9;0.9375;1"/><text x="420" y="262" class="t" text-anchor="start">1  pole in path</text><text x="608" y="262" class="bad" text-anchor="end">⚑</text></g><g opacity="0"><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.7125;0.75;0.9;0.9375;1"/><text x="420" y="296" class="s" text-anchor="start">2  head-height sign</text><text x="420" y="324" class="s" text-anchor="start">3  broken curb</text></g>
+</svg>
